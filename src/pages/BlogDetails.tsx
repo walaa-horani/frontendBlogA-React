@@ -47,7 +47,7 @@ function BlogDetails() {
 
         <div className='max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden'>
 
-            <img   className="w-full h-80 object-cover" src={`http://localhost:5000/images/${blog?.thumbnail}`}/>
+            <img   className="w-full h-80 object-cover" src={`https://backendblogainode.onrender.com/images/${blog?.thumbnail}`}/>
 
       {/* 🧾 Content */}
 

@@ -46,7 +46,7 @@ export const AuthProvider =({children}: AuthProviderProps) => {
 
     const checkAuth  = async()=> {
         try {
-            const res = await axios.get("http://localhost:5000/users/me",{
+            const res = await axios.get("https://backendblogainode.onrender.com/users/me",{
                 withCredentials:true
                
             })
@@ -63,7 +63,7 @@ export const AuthProvider =({children}: AuthProviderProps) => {
 
     const login = async(email: string, password: string)=> {
         try {
-            const res = await axios.post("http://localhost:5000/users/login",   { email, password },
+            const res = await axios.post("https://backendblogainode.onrender.com/users/login",   { email, password },
            { withCredentials: true }
             )
 
@@ -81,7 +81,7 @@ export const AuthProvider =({children}: AuthProviderProps) => {
     const register = async (name: string, email: string, password: string) => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/users/register",
+        "https://backendblogainode.onrender.com/users/register",
         { name, email, password },
         { withCredentials: true }
       );
@@ -97,7 +97,7 @@ export const AuthProvider =({children}: AuthProviderProps) => {
 
   const logout = async()=> {
     try {
-        const res = await axios.post("http://localhost:5000/users/logout", {},
+        const res = await axios.post("https://backendblogainode.onrender.com/users/logout", {},
         { withCredentials: true }
         )
 

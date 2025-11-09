@@ -37,7 +37,7 @@ useEffect(() => {
       setAiLoading(true)
       const prompt = title
 
-      const res = await axios.post("http://localhost:5000/ai/generate", {prompt},
+      const res = await axios.post("https://backendblogainode.onrender.com/ai/generate", {prompt},
 
      { withCredentials: true }
       )
@@ -69,7 +69,7 @@ useEffect(() => {
       formData.append("published", String(published));
       if(thumbnail) formData.append("thumbnail", thumbnail)
 
-        const res = await axios.post("http://localhost:5000/dashboard/blog/add-blog", formData,
+        const res = await axios.post("https://backendblogainode.onrender.com/dashboard/blog/add-blog", formData,
 
       { withCredentials: true }
 

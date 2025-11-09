@@ -1,18 +1,18 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL:"http://localhost:5000/comments",
+    baseURL:"https://backendblogainode.onrender.com/comments",
     withCredentials: true,
 })
 
 const dashboardApi = axios.create({
-    baseURL:"http://localhost:5000/dashboard/comment",
+    baseURL:"https://backendblogainode.onrender.com/dashboard/comment",
     withCredentials: true,
 })
 
 
 const aiApi = axios.create({
-    baseURL:"http://localhost:5000/commentAi",
+    baseURL:"https://backendblogainode.onrender.com/commentAi",
     withCredentials: true,
 })
 

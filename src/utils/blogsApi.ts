@@ -1,13 +1,13 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL:"http://localhost:5000/dashboard/blog",
+    baseURL:"https://backendblogainode.onrender.com/dashboard/blog",
     withCredentials: true,
 })
 
 
 const publicApi = axios.create({
-    baseURL:"http://localhost:5000/blogs",
+    baseURL:"https://backendblogainode.onrender.com/blogs",
     withCredentials: true,
 })
 

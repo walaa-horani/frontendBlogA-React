@@ -20,7 +20,7 @@ function BlogCard({id,title, subtitle, category, thumbnail, author, date}: BlogC
       <Link to={`/blog-details/${id}`}>
 
         
-        <img  className="w-full h-48 object-cover" src={`http://localhost:5000/images/${
+        <img  className="w-full h-48 object-cover" src={`https://backendblogainode.onrender.com/images/${
         thumbnail}`}/>
 
         <div className='p-5 space-y-2'>

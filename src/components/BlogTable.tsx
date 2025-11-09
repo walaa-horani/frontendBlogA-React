@@ -74,7 +74,7 @@ const handleDelete = async(id: string) => {
                 <td className="p-3 border-b">   {blog?.author?.name}   </td>
                  <td className="p-3 border-b">   {blog?.views}   </td>  
                  <td className="p-3 border-b"> 
-                    <img src={`http://localhost:5000/images/${blog?.thumbnail}`}   className="w-12 h-12 object-cover rounded"/>
+                    <img src={`https://backendblogainode.onrender.com/images/${blog?.thumbnail}`}   className="w-12 h-12 object-cover rounded"/>
                     
                     </td>   
 
